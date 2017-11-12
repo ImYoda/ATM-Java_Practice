@@ -126,6 +126,11 @@ public static int u_number;
         );
 
         jPanel7.setBackground(new java.awt.Color(53, 98, 114));
+        jPanel7.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jPanel7MouseClicked(evt);
+            }
+        });
 
         jLabel4.setFont(new java.awt.Font("Verdana", 0, 18)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(236, 240, 241));
@@ -150,6 +155,11 @@ public static int u_number;
         );
 
         jPanel8.setBackground(new java.awt.Color(53, 98, 114));
+        jPanel8.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jPanel8MouseClicked(evt);
+            }
+        });
 
         jLabel3.setFont(new java.awt.Font("Verdana", 0, 18)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(236, 240, 241));
@@ -359,7 +369,7 @@ public static int u_number;
 
     private void jPanel14MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel14MouseClicked
         // TODO add your handling code here:
-        this.setVisible(false);
+        
         new login().setVisible(true);
     }//GEN-LAST:event_jPanel14MouseClicked
 
@@ -368,6 +378,18 @@ public static int u_number;
         this.setVisible(false);
         new depositar(u_number, c_balance).setVisible(true);
     }//GEN-LAST:event_jPanel6MouseClicked
+
+    private void jPanel8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel8MouseClicked
+        // TODO add your handling code here:
+        this.setVisible(false);
+        new transferir(u_number).setVisible(true);
+    }//GEN-LAST:event_jPanel8MouseClicked
+
+    private void jPanel7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel7MouseClicked
+         // TODO add your handling code here:
+         this.setVisible(false);
+         new cobrarTransfer(u_number).setVisible(true);
+    }//GEN-LAST:event_jPanel7MouseClicked
 
     /**
      * @param args the command line arguments
